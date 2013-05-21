@@ -1,0 +1,38 @@
+{
+  "name": "series-stats",
+  "description": "Numeric series statistics algorithms and utility methods.",
+  "homepage": "https://github.com/gmac/series-stats",
+  "url": "https://github.com/gmac/series-stats",
+  "keywords": [
+    "series",
+    "arrays",
+    "statistics",
+    "breaks",
+    "jenks",
+    "natural breaks"
+  ],
+  "author": {
+    "name": "Greg MacWilliam",
+    "email": "greg.macwilliam@threespot.com",
+    "web": "https://github.com/gmac"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gmac/backbone.epoxy.git"
+  },
+  "github": "https://github.com/gmac/series-stats",
+  "license": "MIT",
+  "main": "series-stats.js",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.1.2"
+  },
+  "jam": {
+    "main": "series-stats.js",
+    "include": [
+      "series-stats.js",
+      "readme.md"
+    ]
+  }
+}
