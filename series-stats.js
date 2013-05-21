@@ -154,10 +154,10 @@
 			
 			var count = numClasses;
 			while (count > 1) {
-	            kclass[count - 1] = series[ mat1[k][count]-2 ];
-	            k = mat1[k][count]-1;
-	            count--;
-	        }
+				kclass[count - 1] = series[ mat1[k][count]-2 ];
+				k = mat1[k][count]-1;
+				count--;
+			}
 
 			// Default flat bottom set to start at 0:
 			if (kclass[0] === kclass[1]) kclass[0] = 0;

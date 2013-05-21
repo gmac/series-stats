@@ -20,7 +20,7 @@ Returns an array of unevenly-sized classes distributed at even intervals across 
 **jenksBreaks** `Series.jenksBreaks( [series], classes );`  
 Returns an array of unevenly-sized classes distributed at uneven intervals across the series of values. Breaks are algorithmically plotted around concentrations of values within the series. Tends to minimizes the impact of outlier values on the outskirts of the series. Example:
 
-	Series.quantileBreaks([10, 55, 87, 63, 27, 36, 23, 71, 29, 45, 2, 83, 17], 4);
+	Series.jenksBreaks([10, 55, 87, 63, 27, 36, 23, 71, 29, 45, 2, 83, 17], 4);
 	// >> [2, 17, 36, 63, 87]
 
 **plot** `Series.plot( [breaks], value, descending? );`  
@@ -35,7 +35,7 @@ Finds the minimum value within a series array.
 **max** `Series.max( [series] );`  
 Finds the maximum value within a series array.
 
-**sum** `Series.mean( [series] );`  
+**sum** `Series.sum( [series] );`  
 Calculates the sum (total) of a series array.
 
 **mean** `Series.mean( [series] );`  
