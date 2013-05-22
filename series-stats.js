@@ -51,6 +51,23 @@
 			return ss.sum(series) / series.length;
 		},
 		
+		// Collects all unique values from a number series:
+		unique: function(series) {
+			var uniq = [];
+			var max = Infinity;
+			series = series.slice().sort(sortAsc);
+			
+			for (var i = series.length-1; i >= 0; i--) {
+				var val = series[i];
+				
+				if (val < max) {
+					max = val;
+					uniq.push(val);
+				}
+			}
+			return uniq.reverse();
+		},
+		
 		// Performs a numeric sort on the series array:
 		sort: function(series, descending) {
 			return series.sort(descending ? sortDes : sortAsc);
