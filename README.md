@@ -18,7 +18,7 @@ Returns an array of unevenly-sized classes distributed at even intervals across 
 	// >> [2, 23, 36, 63, 87]
 
 **jenksBreaks** `Series.jenksBreaks( [series], classes );`  
-Returns an array of unevenly-sized classes distributed at uneven intervals across the series of values. Breaks are algorithmically plotted around concentrations of values within the series. Tends to minimizes the impact of outlier values on the outskirts of the series. Example:
+Returns an array of unevenly-sized classes distributed at uneven intervals across the series of values. Breaks are algorithmically plotted around concentrations of values within the series using [Jenks Natural Breaks](http://en.wikipedia.org/wiki/Jenks_natural_breaks_optimization "Jenks Natural Breaks"). Tends to minimizes the impact of outlier values on the outskirts of the series. Example:
 
 	Series.jenksBreaks([10, 55, 87, 63, 27, 36, 23, 71, 29, 45, 2, 83, 17], 4);
 	// >> [2, 17, 36, 63, 87]
