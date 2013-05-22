@@ -34,17 +34,13 @@ By default, plotting starts at the bottom of the series (first value) and works 
 
 Examples:
 
-	// Mid-series ascending/descending:
-	Series.plot([0, 25, 50, 75, 100], 40);
-	// >> 1
-	Series.plot([0, 25, 50, 75, 100], 40, true);
-	// >> 1
+	// Mid-range ascending/descending:
+	Series.plot([0, 25, 50, 75, 100], 40); 			// >> 1
+	Series.plot([0, 25, 50, 75, 100], 40, true); 	// >> 1
 	
-	// Threshold ascending/descending:
-	Series.plot([0, 25, 50, 75, 100], 50);
-	// >> 1
-	Series.plot([0, 25, 50, 75, 100], 50, true);
-	// >> 2
+	// On-threshold ascending/descending:
+	Series.plot([0, 25, 50, 75, 100], 50); 			// >> 1
+	Series.plot([0, 25, 50, 75, 100], 50, true); 	// >> 2
 
 **sort** `Series.sort( [series], descending? );`  
 Performs a numeric sort on the series array.
