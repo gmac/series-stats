@@ -32,6 +32,8 @@ By default, plotting starts at the bottom of the series (first value) and works 
 * `value`: The value to plot within the series.
 * `descending?`: Optional parameter to enable a descending (top-down) plot.
 
+Examples:
+
 	// Mid-series ascending/descending:
 	Series.plot([0, 25, 50, 75, 100], 40);
 	// >> 1
